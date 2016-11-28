@@ -4,6 +4,7 @@
  * IDE: Netbeans 8.2
  * Comment: Completing JAVA exercises from Blue Pelican book.
  */
+
 package javalesson20;
 
 /**
@@ -19,6 +20,7 @@ public class JavaLesson20 {
     
     public static int numberOfShows(){
         return numShows;
+        //return y;
     }
     
     public void setActor1 (String act1){
@@ -31,6 +33,25 @@ public class JavaLesson20 {
      */
     public static void main(String[] args) {
         // TODO code application logic here    
+        JavaLesson20.numberOfShows(); //returning number of Shows instantiated - answer #1
+        
+        System.out.println(actor2); //answer to q.4
+        
+        //JavaLesson20.setActor1("Jimmy Stewart"); //error for q.5 as the non-static method setActor1 is ref from teh static main method
+        System.out.println(numberOfShows());
+        
+        System.out.println(JavaLesson20.x);
+        
+        JavaLesson20 chrs = new JavaLesson20("Cheers");
+        System.out.println(JavaLesson20.x);
+
+        System.out.println(chrs.x);
+        
+        JavaLesson20 hc = new JavaLesson20("History Channel");
+        hc.x = 160;
+        System.out.println(JavaLesson20.x);
+        System.out.println(hc.x);
+
         
         
    }
@@ -42,4 +63,7 @@ public class JavaLesson20 {
         public int y = 1059;
         public String showName;
     
+       
+        
+        
 }
