@@ -1,0 +1,44 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javalesson20;
+
+/**
+ *
+ * @author Stefanos
+ */
+public class JavaLesson20 {
+    
+    public JavaLesson20(String nm){
+        numShows++;
+        showName = nm;
+    }
+    
+    public static int numberOfShows(){
+        return numShows;
+    }
+    
+    public void setActor1 (String act1){
+    
+        actor1 = act1;
+    
+    }
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here    
+        
+        
+   }
+    
+        public String actor1 = "Don Knots";
+        public static String actor2 = "Homer Simpson";
+        public static int numShows = 0;
+        public static int x = 59;
+        public int y = 1059;
+        public String showName;
+    
+}
